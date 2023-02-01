@@ -33,7 +33,7 @@ const nuxtConfig: Configuration = {
     script: [
       { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js', defer: true },
       {
-        src: 'https://cdn.by.wonderpush.com/sdk/1.1/wonderpush-loader.min.js',
+        src: 'https://cdn.gravitec.net/storage/e9a63f7d0c58a3160560257192d2ac65/client.js',
         async: true,
       }
     ],
