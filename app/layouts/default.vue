@@ -13,18 +13,25 @@
   </main>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator';
+<script>
 import SiteHeader from '@/components/partials/header.vue';
 import SiteFooter from '@/components/partials/footer.vue';
 
-@Component({
+export default {
   components: {
     SiteHeader,
     SiteFooter,
   },
-})
-export default class DefaultLayout extends Vue {}
+  mounted() {
+    window.WonderPush = window.WonderPush || [];
+    WonderPush.push([
+      'init',
+      {
+        webKey: '9597e7d139620620fc1da3a80bd11ed5fd4df8affe08d26c70bcbfd783878dd2',
+      },
+    ]);
+  },
+};
 </script>
 
 <style lang="scss">
